@@ -9,7 +9,7 @@ const Background = styled.div`
         left: 0;
         width: 100%;
         height: 100vh;
-        opacity:0.7;
+        opacity:1;
         z-index: -1;
     }
 
@@ -25,7 +25,7 @@ const Background = styled.div`
     .vertical-center {
         margin: 0;
         position: absolute;
-        top: 50%;
+        top: 60%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
     }
@@ -69,12 +69,13 @@ const Background = styled.div`
     .info{
         margin: 30px auto;
         width: 90vw;
+        font-weight: lighter;
         @media (min-width: 600px){
             max-width: 600px;
             margin-left: 30px;
             margin-top30px;
         }
-        color: inherit;
+        color: #fff;
         font-size: 1.6rem;
     }
 
