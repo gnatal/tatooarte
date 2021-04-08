@@ -7,18 +7,46 @@ const Background = styled.div`
         object-fit:cover;
         top: 0;
         left: 0;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
-        opacity:0.6;
+        opacity:0.7;
         z-index: -1;
     }
 
+    .space{
+        @media(min-width: 900px){
+            height: 20vh;
+            width: 100%;
+        }
+        height: 40vh;
+        width: 100%;
+    }
+
+    .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
     .content{
-        width: 100vw;
+        width: 100%;
         height: 100vh;
+        vertical-align:middle;
+        @media(min-width: 900px){
+            text-align: left;
+        }
         text-align: center;
     }
 
+    .presentation-image{
+        width: 90vw;
+        margin: 20px auto;
+        border-radius: 20px;
+        height:30vh;
+        object-fit:cover;
+    }
 
     .header{
         margin: 0px auto;
@@ -41,14 +69,23 @@ const Background = styled.div`
     .info{
         margin: 30px auto;
         width: 90vw;
-        color:#fff;
+        @media (min-width: 600px){
+            max-width: 600px;
+            margin-left: 30px;
+            margin-top30px;
+        }
+        color: inherit;
         font-size: 1.6rem;
-        font-weight: bold;
     }
 
     .button-link{
         padding: 10px;
         font-weight:bold;
+
+        @media(min-width: 900px){
+            margin-left: 30px;
+            width: 600px;
+        }
         
         @media (max-width: 600px){
             width: 90vw;

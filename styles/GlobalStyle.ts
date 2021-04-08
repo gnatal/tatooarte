@@ -34,7 +34,7 @@ export default createGlobalStyle`
 
   body {
     line-height: 1;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Dela Gothic One';
   }
 
   ol, ul {

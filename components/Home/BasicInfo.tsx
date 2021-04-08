@@ -16,13 +16,18 @@ export default function BasicInfo() {
                 <div className={"header"}>
                     <img src={"../images/Logo2.png"} style={{ filter: "invert(1)" }}></img>
                 </div>
-                <p className={"info"}>
-                    Já teve dificuldade em encontrar um tatuador ?
+                {/* <img className={"presentation-image"} src={"../images/Tatoo1.png"}></img> */}
+                {/* <div className={"space"}></div> */}
+                <div className={"vertical-center"}>
+
+                    <p className={"info"}>
+                        Já teve dificuldade em encontrar um tatuador ?
                 </p>
-                <p className={"info"}>
-                    Não consegue se contactar com seu tatuador ?
+                    <p className={"info"}>
+                        Não consegue se contactar com seu tatuador ?
                 </p>
-                <Button onClick={handleClick} className={"button-link"}>Agende seu orçamento</Button>
+                    <Button onClick={handleClick} className={"button-link"}>Agende seu orçamento</Button>
+                </div>
             </div>
         </Background>
     )

@@ -4,13 +4,14 @@ export const Background = styled.div`
 
     width: 100%;
     height: 100vh;
-    background: #fff;
-    opacity: 0.9;
+    background: #1D1D1D;
 
     .content{
-        margin-top: 30vh;
         text-align:left;
-        mix-blend-mode: difference;
+        @media(min-width: 900px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     .header{
@@ -20,7 +21,7 @@ export const Background = styled.div`
         text-transform: capitalize;
         padding-bottom: 10px;
         font-size: 1.75rem;
-        color: #f44336;
+        color: #fff;
         box-sizing: border-box;
         text-decoration: underline;
 
@@ -32,7 +33,7 @@ export const Background = styled.div`
         padding: 0px;
         font-size: 1.75rem;
         line-height: 1.16;
-        color: rgb(17, 17, 17);
+        color: #f44336;
         box-sizing: border-box;
     }
 
@@ -43,7 +44,7 @@ export const Background = styled.div`
         text-align:left;
         margin: 0px auto;
         a{
-                color: #f44336;
+                color: #fff;
             font-weight: 500;
             letter-spacing: -0.03em;
             font-size: 1.125rem;
@@ -53,14 +54,31 @@ export const Background = styled.div`
         }
     }
 
+    .centered-label {
+        display: flex;
+        align-items: center;
+    }
+
     .banner{
+
+
         width: 90%;
         margin: 10px auto;
+        
+        @media(min-width: 900px){
+                height: 100vh;
+        }
         img{
             border-radius: 20px;
             width: 100%;
             height: 50vh;
             object-fit: cover;
+            @media(min-width: 900px){
+                height: 80%;
+                object-fit: contain;
+
+            }
+
 
         }
     }

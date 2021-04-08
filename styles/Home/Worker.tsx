@@ -1,17 +1,20 @@
-import styled from 'styled-components'
-
+import styled from 'styled-components';
 
 export const Background = styled.div`
 
+    
     width: 100%;
     height: 100vh;
-    background: #222;
-    opacity: 0.9;
+    background: #1D1D1D;
 
     .content{
-        margin-top: 30vh;
+        height: 90vh;
+        background: #1D1D1D;
         text-align:left;
-        mix-blend-mode: difference;
+        @media(min-width: 900px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     .header{
@@ -24,6 +27,7 @@ export const Background = styled.div`
         color: #fff;
         box-sizing: border-box;
         text-decoration: underline;
+
     }
 
     .text{
@@ -53,14 +57,32 @@ export const Background = styled.div`
         }
     }
 
+    .centered-label {
+        display: flex;
+        align-items: center;
+    }
+
     .banner{
+
+
         width: 90%;
         margin: 10px auto;
+
+        @media(min-width: 900px){
+            width: 100%;
+            height: 100vh;
+
+        }
         img{
             border-radius: 20px;
             width: 100%;
             height: 50vh;
             object-fit: cover;
+            @media(min-width: 900px){
+                height: 80%;
+                object-fit: contain;
+            }
+
 
         }
     }
