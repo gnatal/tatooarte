@@ -24,10 +24,12 @@ const Background = styled.div`
 
     .vertical-center {
         margin: 0;
+        width: 90%;
         position: absolute;
         top: 60%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+        left:10%;
     }
 
     .content{
@@ -37,7 +39,7 @@ const Background = styled.div`
         @media(min-width: 900px){
             text-align: left;
         }
-        text-align: center;
+        text-align: left;
     }
 
     .presentation-image{
@@ -67,7 +69,7 @@ const Background = styled.div`
 
 
     .info{
-        margin: 30px auto;
+        margin: 10px auto;
         width: 90vw;
         font-weight: lighter;
         @media (min-width: 600px){
