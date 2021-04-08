@@ -73,8 +73,8 @@ const Background = styled.div`
         @media (min-width: 600px){
             max-width: 600px;
             margin-left: 30px;
-            margin-top30px;
         }
+        text-shadow: 2.5px 2.5px rgba(120,120,120,0.5);
         color: #fff;
         font-size: 1.6rem;
     }
